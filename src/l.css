@@ -1,0 +1,91 @@
+/* General body styling for alignment and centering */
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Title styling with shadow and transition effects */
+  h1 {
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px #0056b3;
+    transition: text-shadow 0.3s ease;
+    border: 3px solid rgb(127, 208, 127);
+    border-radius: 50%;
+    padding: 25px;
+    margin: 10px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #bacde2;
+  }
+  
+  /* Hover effect for title */
+  h1:hover {
+    text-shadow: 10px 20px 18px #a6bed7;
+    background-color: rgb(66, 73, 86);
+    color: #fbf6f6;
+  }
+  
+  /* Additional transitions and animations for inputs and buttons */
+  input[type="text"], button {
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* CSS styles for Signup/Login component */
+  
+  #log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-field {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+.form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    background-color: #e09f9f;
+    padding: 50px;
+}  
+.form input{
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+    
+}
+.form button{
+    margin: 10px;
+}

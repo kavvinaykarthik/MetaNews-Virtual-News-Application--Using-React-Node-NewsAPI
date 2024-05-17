@@ -1,0 +1,276 @@
+/* General body styling for alignment and centering */
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#hi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hi a{
+  background-color: #007bff;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 10px;
+  color:#e6e9ed;
+}
+#hi a:hover{
+  transform: translateY(-3px);
+}
+#log.form{
+  display: flex;
+  flex-direction: column;
+}
+/* Title styling with shadow and transition effects */
+h1 {
+  font-size: 80px;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px 4px #0056b3;
+  transition: text-shadow 0.3s ease;
+  border: 3px solid rgb(127, 208, 127);
+  border-radius: 50%;
+  padding: 25px;
+  margin: 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #bacde2;
+}
+
+/* Hover effect for title */
+h1:hover {
+  text-shadow: 10px 20px 18px #a6bed7;
+  background-color: rgb(66, 73, 86);
+  color: #fbf6f6;
+}
+
+/* Additional transitions and animations for inputs and buttons */
+input[type="text"], button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Card styling with transitions for hover effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) rotate(1deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card a:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Input field styling */
+#search-input {
+  width: fit-content;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+button {
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* General title styling */
+h1, h2, h3 {
+  margin-top: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+}
+
+/* Container styling with responsive grid layout */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+}
+
+/* Card styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 100%;
+  height: fit-content;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card h3 {
+  margin: 16px 16px 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.card a {
+  display: block;
+  margin: 16px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Hover effects for card links */
+.card a:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+.cat #ha{
+  background-color: #bacde2;
+  border-radius: 20px;
+  padding: 5px;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 30px;
+}
+.cat a:hover {
+  background-color: #829cb7;
+  transform: translateY(-30px);
+  color: aliceblue;
+  border-radius: 20px;
+  padding: 5px;
+  text-shadow: 10px 20px 18px #0056b3;
+}
+
+/* Suggestions styling */
+#hi .suggestions {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions .category {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suggestions .category:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+/* CSS styles for Signup/Login component */
+
+#log {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px 4px #0056b3;
+  transition: text-shadow 0.3s ease;
+  border: 3px solid rgb(127, 208, 127);
+  border-radius: 50%;
+  padding: 25px;
+  margin: 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #bacde2;
+}
+
+h1:hover {
+  text-shadow: 10px 20px 18px #a6bed7;
+  background-color: rgb(66, 73, 86);
+  color: #fbf6f6;
+}
+
+.input-field {
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
